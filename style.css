@@ -28,8 +28,9 @@ header {
 }
 
 .header-icon {
-    color: #4CE1A0;
+    color: #fefcfd;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .navbar-list {
@@ -42,11 +43,14 @@ header {
 .navbar-list-item-link {
     text-decoration: none;
     color: white;    
-    transition: color .2s ease;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: color .2s ease, background-color .2s ease;
 }
 
 .navbar-list-item-link:hover {
-    color: #4CE1A0;
+    background-color: #fefcfd;
+    color: #185F40;
 }
 
 main {
@@ -84,7 +88,8 @@ main > * + * {
 }
 
 .cargo {
-    background-color: #4CE1A0;
+    background-color: #185F40;
+    color: #fefcfd;
     color: white;
     white-space: nowrap;
     box-shadow: 10px 10px 0 #141414;
@@ -102,7 +107,8 @@ main > * + * {
 }
 
 .subtitulos {
-    background-color: #4CE1A0;
+    background-color: #185F40;
+    color: #fefcfd;
     color: white;
     box-shadow: 4px 4px 0 #141414;
     border: 3px solid #141414;
@@ -127,7 +133,10 @@ main > * + * {
 .frontendmentor-link {
     text-decoration: none;
     font-weight: 600;
-    color: #4CE1A0;
+    background-color: #185F40;
+    color: #fefcfd;
+    padding: 0.1rem 0.5rem;
+    border-radius: 5px;
 }
 
 .frontendmentor-link:hover {
@@ -172,7 +181,7 @@ th, td {
 .idiomas-falados {
     padding: 1.75rem 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     border: 3px solid #141414;
     box-shadow: 6px 6px 0 #141414;
@@ -206,6 +215,15 @@ th, td {
     border: 5px solid #141414;
     padding: 2rem;
     background-color: white;
+}
+
+.logo-da-empresa {
+    position: relative;
+    top: 3px;
+}
+
+.bit-more-top {
+    top: 5px;
 }
 
 .formulario {
@@ -253,7 +271,8 @@ th, td {
     border-radius: 5px;
     padding: 1rem;
     border: none;
-    background-color: #4CE1A0;
+    background-color: #185F40;
+    color: #fefcfd;
     transition: opacity .2s ease;
     cursor: pointer;
 }
@@ -278,6 +297,16 @@ th, td {
     font-size: 1.5rem;
 }
 
+.footer p > a {
+    color: #185F40;
+    color: #fefcfd;
+    text-decoration: none;
+}
+
+.footer p > a:hover {
+    text-decoration: underline;    
+}
+
 .social-media {
     list-style-type: none;
     display: flex;
@@ -287,4 +316,9 @@ th, td {
 .social-media img {
     height: 25px;
     width: 25px;
+    transition: scale .2s ease;
+}
+
+.social-media img:hover {
+    scale: 1.1;
 }
