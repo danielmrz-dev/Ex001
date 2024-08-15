@@ -181,7 +181,6 @@ th, td {
 .idiomas-falados {
     padding: 1.75rem 4rem;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     border: 3px solid #141414;
     box-shadow: 6px 6px 0 #141414;
@@ -189,13 +188,16 @@ th, td {
     background-color: white;
 }
 
-.portugues, .ingles {
+.portugues-ingles {
+    width: 100%;
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.portugues span, .ingles span {
+.portugues-ingles li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
